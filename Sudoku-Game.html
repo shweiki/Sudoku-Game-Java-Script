@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="sudokuPage modernizr-no-touchevents" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title></title>
+
+  <script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-26841383-2', {
+  "custom_map": { "dimension2": "settings" }
+});
+
+function updateGASettings(settings) {
+  setTimeout(function(){
+    gtag("event", "update_settings", {"settings": JSON.stringify(settings), non_interaction: true});
+  }, 0);
+}
+
+setTimeout((function(){gtag('event','nobounce',{event_category:'aux'})}),60000);
+setInterval((function(){gtag('event','beacon',{event_category:'aux'})}),1500000);
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" media="screen" href="js/style.css">
+<script>
+window.difficulty = "easy";
+</script>
+
+<script src="js/sudoku.js.download"></script>
+<style type="text/css">
+:root .adsenseContainer,
+:root .adsbygoogle
+{ display: none !important; }
+:root *[xtwj61a][hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+<div id="sudoku">
+  <div class="sudokuContainer">
+        <div class="sudokuAd sudokuAdLeft">
+          <div class="sudokuAdSpacer"></div>
+          <div class="adsenseContainer" xtwj61a="" hidden=""></div>
+        </div>
+        <div class="sudokuGame">
+          <div class="sudokuBoardContainer">
+            <canvas id="sudokuBoard" width="696" height="696"></canvas>
+          </div>
+
+
+          <div class="sudokuInputBar">
+            <div class="button sudokuCell cell1 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button sudokuCell cell2 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button sudokuCell cell3 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button sudokuCell cell4 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button sudokuCell cell5 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button sudokuCell cell6 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button sudokuCell cell7 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button sudokuCell cell8 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button sudokuCell cell9 disabledButton">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+              <div class="buttonState disabledButtonState"></div>
+            </div>
+            <div class="button notes unselectedButton" title="Note-taking mode (N)">
+              <div class="buttonState unselectedButtonState"></div>
+              <div class="buttonState selectedButtonState"></div>
+            </div>
+            </div>
+
+          </div><div class="sudokuAd sudokuAdRight">
+              <div class="sudokuAdSpacer"></div>
+              <div class="adsenseContainer" xtwj61a="" hidden=""></div>
+            </div>
+          </div>
+        </div>
+
+
+<div class="win-modal modal fade" id="win-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title">You Win</h4>
+      </div>
+      <div class="modal-body">
+        <p>You Got It </p>
+        <div class="score"></div>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-success new-game-button" data-dismiss="modal">New Game</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
